@@ -1,0 +1,41 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  background-color: #f7f7f5;
+  color: #1c1c1e;
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+}
+html {
+  scroll-behavior: smooth;
+}
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+/* Mobile responsive fixes */
+@media (max-width: 768px) {
+  .project-card {
+    grid-template-columns: 1fr !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-container {
+    grid-template-columns: 1fr !important;
+  }
+}

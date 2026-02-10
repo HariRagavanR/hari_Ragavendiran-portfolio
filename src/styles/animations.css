@@ -1,0 +1,150 @@
+.fade-in {
+  animation: fadeIn 1s ease forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+button:hover {
+  transform: translateY(-2px);
+  transition: 0.2s ease;
+}
+.service-card:hover {
+  transform: translateY(-4px);
+  transition: 0.2s ease;
+}
+
+footer a {
+  position: relative;
+}
+
+footer a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 0;
+  height: 2px;
+  background: var(--accent);
+  transition: width 0.25s ease;
+}
+
+footer a:hover {
+  color: var(--accent);
+}
+
+footer a:hover::after {
+  width: 100%;
+}
+
+/* Navbar link hover effect */
+.nav-link {
+  position: relative;
+}
+
+.nav-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  width: 0;
+  height: 2px;
+  background: var(--accent);
+  transition: width 0.25s ease;
+}
+
+.nav-link:hover {
+  color: var(--accent);
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}
+/* Hero social links underline animation */
+.hero-link {
+  position: relative;
+  font-size: 14px;
+  color: var(--text-secondary);
+}
+
+.hero-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 0;
+  height: 2px;
+  background: var(--accent);
+  transition: width 0.25s ease;
+}
+
+.hero-link:hover {
+  color: var(--accent);
+}
+
+.hero-link:hover::after {
+  width: 100%;
+}
+.footer-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  color: var(--text-primary);
+  position: relative;
+}
+
+.footer-link img {
+  width: 16px;
+  height: 16px;
+  opacity: 0.7;
+}
+
+/* underline animation */
+.footer-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 0;
+  height: 2px;
+  background: var(--accent);
+  transition: width 0.25s ease;
+}
+
+.footer-link:hover {
+  color: var(--accent);
+}
+
+.footer-link:hover::after {
+  width: 100%;
+}
+
+.footer-link:hover img {
+  opacity: 1;
+}
+/* Hero CTA button hover animation */
+.hero-btn {
+  transition: all 0.25s ease;
+}
+
+.hero-btn:hover {
+  transform: translateY(-3px);
+}
+
+/* Primary button hover */
+.primary-btn:hover {
+  box-shadow: 0 12px 25px rgba(46, 204, 113, 0.35);
+}
+
+/* Secondary button hover */
+.secondary-btn:hover {
+  box-shadow: 0 10px 22px rgba(0, 0, 0, 0.15);
+}
