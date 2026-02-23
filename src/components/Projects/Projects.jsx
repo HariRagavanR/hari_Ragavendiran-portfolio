@@ -3,13 +3,13 @@ function Projects() {
     <section style={styles.section} id="work">
       <div style={styles.container}>
         
-        <h2 style={styles.title}>Featured Project</h2>
+        <h2 style={styles.title}>Projects</h2>
 
         <div style={styles.card} className="project-card">
           
           {/* LEFT */}
           <div style={styles.content}>
-            <h3 style={styles.projectTitle}>DocuMind AI</h3>
+            <h3 style={styles.projectTitle}>DocuMind AI QA Bot</h3>
             <p style={styles.tagline}>
               Document-based GenAI assistant powered by RAG
             </p>
@@ -54,6 +54,58 @@ function Projects() {
           </div>
 
         </div>
+        <div style={styles.card} className="project-card">
+  
+          {/* LEFT */}
+          <div style={styles.content}>
+            <h3 style={styles.projectTitle}>
+              CodeGenLite – LoRA Fine-Tuned Coding Assistant
+            </h3>
+
+            <p style={styles.tagline}>
+              Parameter-Efficient LLM Fine-Tuning for Code Generation
+            </p>
+
+            <p style={styles.desc}>
+              Designed and fine-tuned a lightweight large language model using 
+              Low-Rank Adaptation (LoRA) techniques to improve code generation 
+              and explanation tasks while minimizing computational overhead.
+            </p>
+
+            <ul style={styles.points}>
+              <li>Fine-tuned TinyLlama-1.1B-Chat using PEFT (LoRA)</li>
+              <li>Implemented 4-bit quantization for memory-efficient training</li>
+              <li>Built multi-language instruction dataset (Python, Java, C)</li>
+              <li>Achieved stable loss convergence across epochs</li>
+              <li>Developed interactive inference pipeline for chat-style debugging</li>
+            </ul>
+
+            <div style={styles.actions}>
+              <a
+                href="https://github.com/HariRagavanR/Codegenlite_AI"
+                target="_blank"
+                rel="noreferrer"
+                style={styles.link}
+              >
+                View Code
+              </a>
+
+              <span style={{ opacity: 0.4 }}>
+                Training Demo (Colab)
+              </span>
+            </div>
+          </div>
+
+          {/* RIGHT */}
+          <div style={styles.preview}>
+            <img
+              src="/images/projects/codegenlite-preview.png"
+              alt="CodeGenLite Preview"
+              style={styles.image}
+            />
+          </div>
+
+        </div>
       </div>
     </section>
   );
@@ -81,6 +133,7 @@ const styles = {
     borderRadius: "16px",
     background: "var(--card-bg)",
     boxShadow: "0 30px 60px rgba(0,0,0,0.08)",
+    marginBottom: "40px",   // 👈 ADD THIS LINE
   },
 
   content: {},
@@ -145,3 +198,4 @@ const styles = {
 };
 
 export default Projects;
+
